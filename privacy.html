@@ -1,0 +1,49 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>AI Video Studio · Privacy policy</title><style>
+:root{color-scheme:dark;--bg:#111214;--card:#1b1d21;--line:#2c2f35;--ink:#ececec;--quiet:#9aa0a8;--accent:#4c8dff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:16px 16px 8px}h1{font-size:20px;margin:0 0 4px}p.sub{margin:0;color:var(--quiet);font-size:13px}
+a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:10px 10px 96px}
+@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--card);border:2px solid var(--line);border-radius:12px;overflow:hidden;position:relative}
+.card.sel{border-color:var(--accent)}
+.card img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.meta{padding:8px 10px 10px}.id{font-weight:600}.var{color:var(--quiet);font-size:12px;margin-top:2px}
+.pick{margin-top:8px;width:100%;padding:9px;border-radius:8px;border:1px solid var(--line);background:#23262b;color:var(--ink);font:inherit;font-weight:600}
+.card.sel .pick{background:var(--accent);border-color:var(--accent);color:#fff}
+.badge{position:absolute;top:8px;left:8px;background:#000a;padding:2px 8px;border-radius:99px;font-size:12px}
+.bad{opacity:.45}
+.bar{position:fixed;left:0;right:0;bottom:0;background:#000d;backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 12px;display:flex;gap:8px;align-items:center}
+.bar .count{flex:1;font-size:14px}.bar button,.bar a.btn{padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;font:inherit;font-weight:600;text-decoration:none}
+.bar button.ghost{background:#2c2f35}
+#lb{position:fixed;inset:0;background:#000;display:none;flex-direction:column;z-index:9}
+#lb.on{display:flex}#lb img{flex:1;min-height:0;object-fit:contain;width:100%}
+#lb .nav{display:flex;gap:8px;padding:10px}#lb .nav button{flex:1;padding:12px;border-radius:8px;border:0;background:#2c2f35;color:#fff;font:inherit;font-weight:600}
+#lb .nav button.on{background:var(--accent)}
+ul.chars{list-style:none;padding:0 16px;margin:8px 0}ul.chars li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+ul.chars .st{color:var(--quiet);font-size:13px}
+h2.face{font-size:16px;margin:18px 12px 0;display:flex;gap:8px;align-items:baseline}h2.face span{color:var(--quiet);font-size:13px;font-weight:400}
+.grid.r2{padding-bottom:4px;grid-template-columns:repeat(3,1fr);gap:8px}
+.grid.r2 .meta{padding:6px 7px 8px}.grid.r2 .id{font-size:13px}.grid.r2 .var{font-size:11px}.grid.r2 .pick{padding:7px;font-size:13px}
+@media(min-width:760px){.grid.r2{grid-template-columns:repeat(7,1fr)}}
+.grid.r2:last-of-type{padding-bottom:96px}
+ul.chars .rounds a{margin-right:14px}
+</style></head><body><header><a href='index.html'>&larr; Home</a><h1>Privacy policy</h1>
+<p class='sub'>AI Video Studio · last updated 2026-11-08</p></header>
+<div style='padding:0 16px 32px;max-width:720px'>
+<p>AI Video Studio is a personal, non-commercial tool. Its only user is its owner, who runs it from their own
+GitHub repository to generate and review images and videos for a short-film project.</p>
+<h2>Google user data</h2>
+<p>The tool asks for one Google permission: <code>https://www.googleapis.com/auth/drive.file</code>. With it, the tool can
+create files in the owner's Google Drive and read or change only the files it created itself. It cannot see any other
+file in the owner's Drive.</p>
+<p>The tool uploads generated images and videos to a folder it creates in the owner's Drive. It does not collect,
+sell, share or transfer Google user data to anyone, and it does not use Google user data for advertising or to train
+AI models.</p>
+<h2>Storage and deletion</h2>
+<p>The access token is stored only as an encrypted secret in the owner's GitHub repository. The owner can revoke access
+at any time at <a href='https://myaccount.google.com/permissions'>myaccount.google.com/permissions</a> and delete the
+uploaded files from Google Drive.</p>
+<h2>Contact</h2>
+<p>Questions: contact the owner through the GitHub account <a href='https://github.com/ychu02-ai'>ychu02-ai</a>.</p>
+</div></body></html>
